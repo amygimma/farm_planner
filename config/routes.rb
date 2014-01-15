@@ -1,4 +1,5 @@
 FarmPlanner::Application.routes.draw do
+  devise_for :users
   root "static_pages#home"
   match '/about',   to: "static_pages#about",    via: 'get'
   match '/help',    to: "static_pages#help",     via: 'get'
